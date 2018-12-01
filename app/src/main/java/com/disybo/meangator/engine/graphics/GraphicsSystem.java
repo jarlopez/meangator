@@ -46,6 +46,7 @@ public class GraphicsSystem implements Renderer {
 
     @Override
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
+        driver.getApp().onGraphicsReady();
     }
 
     @Override
