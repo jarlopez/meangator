@@ -48,6 +48,11 @@ public class MainDriver extends Activity implements Driver {
     }
 
     @Override
+    public void setInput(InputSystem inputSystem) {
+        input = inputSystem;
+    }
+
+    @Override
     public GraphicsSystem getGraphics() {
         return graphics;
     }
@@ -60,11 +65,6 @@ public class MainDriver extends Activity implements Driver {
     @Override
     public Activity getActivity() {
         return this;
-    }
-
-    @Override
-    public void setInput(InputSystem inputSystem) {
-        input = inputSystem;
     }
 
     @Override

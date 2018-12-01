@@ -12,11 +12,11 @@ public interface Driver {
 
     InputSystem getInput();
 
+    void setInput(InputSystem inputSystem);
+
     GraphicsSystem getGraphics();
 
     Application getApp();
 
     Activity getActivity();
-
-    void setInput(InputSystem inputSystem);
 }
